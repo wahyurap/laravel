@@ -18,7 +18,7 @@ composer:
     MYSQL_DATABASE: docker 
     MYSQL_ROOT_PASSWORD: root     
   script: 
-    - php composer install 
+    - composer install 
     - cp .env.example .env 
     - php artisan key:generate 
 
