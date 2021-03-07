@@ -11,7 +11,7 @@ composer:
   image: php:7.4-fpm  
   services: 
     - name: mysql:latest 
-    - alias: dbserver 
+      alias: dbserver 
   variables: 
     MYSQL_DATABASE: docker 
     MYSQL_ROOT_PASSWORD: root     
