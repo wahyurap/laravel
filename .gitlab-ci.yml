@@ -1,7 +1,7 @@
 stages: 
-  - preparation 
-  - building
-  - testing
+- preparation 
+- building
+- testing
 
 image: edbizarro/gitlab-ci-pipeline-php:7.3 
 
