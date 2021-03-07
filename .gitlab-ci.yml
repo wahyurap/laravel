@@ -20,7 +20,7 @@ composer:
     - cp .env.example .env 
     - php artisan key:generate 
 
-artifacts: 
-  paths:
-    - vendor/ 
-    - .env 
+  artifacts: 
+    paths:
+      - vendor/
+      - .env 
