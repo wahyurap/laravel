@@ -2,6 +2,8 @@ stages:
 - build
 - deploy 
 
+image: edbizarro/gitlab-ci-pipeline-php:7.3
+ 
 cache: 
   paths: 
     - laravel.repository/ 
