@@ -23,4 +23,4 @@ composer:
   artifacts: 
     paths:
       - vendor/
-      - .env 
+      - .env
