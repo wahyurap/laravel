@@ -67,6 +67,14 @@ build-assets:
 db-seeding:
   stage: building
   services:
+  variables: 
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_USER: ${DB_USERNAME}
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+
     - name: mysql:8.0
       command: ["--default-authentication-plugin=root"]
   # Download the artifacts for these jobs
